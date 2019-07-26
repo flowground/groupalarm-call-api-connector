@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "description": "CallAlarmingConfiguration describes all data needed to configure some kind of call alarming",
+            "type": "object",
+            "properties": {
+                "alarmTemplateID": {
+                    "type": "integer",
+                    "format": "int64",
+                    "x-go-name": "AlarmTemplateID"
+                },
+                "gsm": {
+                    "type": "string",
+                    "x-go-name": "GSM"
+                },
+                "id": {
+                    "type": "integer",
+                    "format": "int64",
+                    "x-go-name": "ID"
+                },
+                "organizationID": {
+                    "type": "integer",
+                    "format": "int64",
+                    "x-go-name": "OrganizationID"
+                },
+                "pin": {
+                    "type": "string",
+                    "x-go-name": "PIN"
+                }
+            },
+            "x-go-package": "groupalarm.com/go/call/api/services"
+        }
+    }
+}
